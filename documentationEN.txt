@@ -1,0 +1,111 @@
+Documentation for the swypiEmotionText Library
+Description
+The swypiEmotionText library is designed for text analysis and determining the emotions contained within it. It provides tools for evaluating moods and emotions in user-entered texts. The library can identify positive, negative, and neutral emotions.
+
+Installation
+To install the library from PyPI, use the following command:
+
+bash
+Копіювати
+Редагувати
+pip install swypiEmotionText
+If you want to install the library from a local .gz file, make sure you have the library file in .gz format. Then, use the command:
+
+bash
+Копіювати
+Редагувати
+pip install /path/to/swypiEmotionText.gz
+Where /path/to/swypiEmotionText.gz is the path to the file on your computer or device.
+
+Usage
+Importing the library
+
+To use the library in your Python code, import it as follows:
+
+python
+Копіювати
+Редагувати
+from swypiEmotionText.text_check import text_check
+Function text_check
+
+The text_check function analyzes the text and determines the emotion that predominates in it. It also returns the emotion score on a scale from -1 to 1.
+
+Function signature:
+
+python
+Копіювати
+Редагувати
+swypiEmotionText.text_check(text: str, emotion_check: bool = False) -> dict
+Parameters:
+
+text (str): The text to be analyzed.
+emotion_check (bool, optional): If set to True, the library will check the text for emotions. Default is False.
+Returns:
+
+The function returns a dictionary with the analysis results. The dictionary may contain the following keys:
+
+emotion: The overall emotion identified in the text (e.g., "positive", "negative").
+score: The emotion score on a scale from -1 to 1 (where -1 is a strong negative emotion, and 1 is a strong positive emotion).
+Example Usage:
+
+python
+Копіювати
+Редагувати
+from swypiEmotionText.text_check import text_check
+
+# Text to analyze
+input_text = "I am so happy today!"
+
+# Checking for emotions
+result = text_check(input_text, emotion_check=True)
+
+# Outputting results
+print(result)
+Example Output:
+
+json
+Копіювати
+Редагувати
+{
+  "emotion": "positive",
+  "score": 0.95
+}
+File Structure
+The library includes the following main files:
+
+__init__.py: Package initialization for importing the library in Python.
+text_check.py: The main file containing the function for text analysis and emotion determination.
+errors.py: Contains functions for handling errors that may occur during library execution.
+How to Create a New Version of the Library
+To update the library and release a new version on PyPI, follow these steps:
+
+Update the code and files of the library.
+Update the version in the setup.py file.
+Create a package archive:
+bash
+Копіювати
+Редагувати
+python setup.py sdist
+Upload the new version to PyPI:
+bash
+Копіювати
+Редагувати
+twine upload dist/*
+Errors
+The library handles various errors, such as:
+
+If the text cannot be analyzed, an error like "Invalid input" will be returned.
+Testing
+After installing the library, you can test it using the provided examples or by creating your own tests. To do this, use the text_check function to analyze different texts for emotional content.
+
+This is the full documentation for your library. If you have any questions or need further clarification on any part, feel free to reach out!
+
+also, the library can be used not only for example, but in other areas, in other python scripts. For example, it can be used in games and other Python scripts!
+
+  the library does not stand still!
+  the library will always be updated by the developer! Even if it is not updated for a long time, it is not a sign that she died, there are certain reasons for this!
+
+    by Fleeks
+    stasyt024@gmail.com
+    https://t.me/fleeks_admin
+
