@@ -47,11 +47,12 @@ from swypiEmotionText.text_check import text_check
 # Text to analyze
 input_text = "I am so happy today!"
 
-# Checking for emotions
-result = text_check(input_text, emotion_check=True)
+# Checking for emotions (without emotion_check parameter)
+result = text_check(input_text)
 
 # Outputting results
 print(result)
+
 Example Output:
 
 *json
