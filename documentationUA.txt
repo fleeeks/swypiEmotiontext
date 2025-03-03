@@ -5,11 +5,11 @@
 Встановлення
 Щоб встановити бібліотеку з PyPI, скористайтеся командою:
 
-bash
+*bash
 pip install swypiEmotionText
 Якщо ви хочете встановити бібліотеку з локального файлу .gz, спершу переконайтеся, що у вас є файл бібліотеки у форматі .gz. Потім скористайтеся командою:
 
-bash
+*bash
 pip install /path/to/swypiEmotionText.gz
 Де /path/to/swypiEmotionText.gz — це шлях до файлу на вашому комп'ютері або пристрої.
 
@@ -18,9 +18,7 @@ pip install /path/to/swypiEmotionText.gz
 
 Щоб використати бібліотеку в Python-коді, імпортуйте її наступним чином:
 
-python
-
-Редагувати
+*python
 from swypiEmotionText.text_check import text_check
 Функція text_check
 
@@ -28,7 +26,7 @@ from swypiEmotionText.text_check import text_check
 
 Сигнатура функції:
 
-python
+*python
 swypiEmotionText.text_check(text: str, emotion_check: bool = False) -> dict
 Параметри:
 
@@ -42,7 +40,7 @@ emotion: Загальна емоція, яка відповідає аналіз
 score: Оцінка емоції за шкалою від -1 до 1 (де -1 — це сильна негативна емоція, а 1 — сильна позитивна).
 Приклад використання:
 
-python
+*python
 from swypiEmotionText.text_check import text_check
 
 # Текст для аналізу
@@ -56,7 +54,7 @@ print(result)
 
 Приклад виводу:
 
-json
+*json
 {
   "emotion": "positive",
   "score": 0.95
