@@ -3,17 +3,14 @@ Description
 The swypiEmotionText library is designed for text analysis and determining the emotions contained within it. It provides tools for evaluating moods and emotions in user-entered texts. The library can identify positive, negative, and neutral emotions.
 
 Installation
-To install the library from PyPI, use the following command:
+To install the library from PyPI, use the following comma*nd:
 
-bash
-Копіювати
-Редагувати
+*bash
 pip install swypiEmotionText
 If you want to install the library from a local .gz file, make sure you have the library file in .gz format. Then, use the command:
 
-bash
-Копіювати
-Редагувати
+*bash
+
 pip install /path/to/swypiEmotionText.gz
 Where /path/to/swypiEmotionText.gz is the path to the file on your computer or device.
 
@@ -22,9 +19,7 @@ Importing the library
 
 To use the library in your Python code, import it as follows:
 
-python
-Копіювати
-Редагувати
+*python
 from swypiEmotionText.text_check import text_check
 Function text_check
 
@@ -32,9 +27,7 @@ The text_check function analyzes the text and determines the emotion that predom
 
 Function signature:
 
-python
-Копіювати
-Редагувати
+*python
 swypiEmotionText.text_check(text: str, emotion_check: bool = False) -> dict
 Parameters:
 
@@ -48,9 +41,7 @@ emotion: The overall emotion identified in the text (e.g., "positive", "negative
 score: The emotion score on a scale from -1 to 1 (where -1 is a strong negative emotion, and 1 is a strong positive emotion).
 Example Usage:
 
-python
-Копіювати
-Редагувати
+*python
 from swypiEmotionText.text_check import text_check
 
 # Text to analyze
@@ -63,9 +54,7 @@ result = text_check(input_text, emotion_check=True)
 print(result)
 Example Output:
 
-json
-Копіювати
-Редагувати
+*json
 {
   "emotion": "positive",
   "score": 0.95
@@ -76,21 +65,7 @@ The library includes the following main files:
 __init__.py: Package initialization for importing the library in Python.
 text_check.py: The main file containing the function for text analysis and emotion determination.
 errors.py: Contains functions for handling errors that may occur during library execution.
-How to Create a New Version of the Library
-To update the library and release a new version on PyPI, follow these steps:
 
-Update the code and files of the library.
-Update the version in the setup.py file.
-Create a package archive:
-bash
-Копіювати
-Редагувати
-python setup.py sdist
-Upload the new version to PyPI:
-bash
-Копіювати
-Редагувати
-twine upload dist/*
 Errors
 The library handles various errors, such as:
 
