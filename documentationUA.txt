@@ -6,7 +6,12 @@
 Щоб встановити бібліотеку з GitHub
 
 *bash
-pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/SwypiEmotiontext/swypiEmotionText.tar.gz
+pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/0.1/swypiEmotionText.tar.gz
+це буде 0.1 версія для того щоб завантажити іншу робіть:
+1.перевірьте Github realise які є внші версії
+наприклад 1.0
+вам треьа в посиланні де /download/(тут вказати версію)
+
 Якщо ви хочете встановити бібліотеку з локального файлу .gz, спершу переконайтеся, що у вас є файл бібліотеки у форматі .gz. Потім скористайтеся командою:
 
 *bash
