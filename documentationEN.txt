@@ -6,14 +6,18 @@ Installation
 To install the library from Github: use the following command:
 
 *bash
-pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/SwypiEmotiontext/swypiEmotionText.tar.gz
+pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/0.1/swypiEmotionText.tar.gz
+This is for installing version 0.1, if you need another one in the link where download/specify the name you need to view the repository in realtime, which versions are available for installation, for example:
+https://github.com/fleeeks/swypiEmotiontext/releases/download/1.0/swypiEmotionText.tar.gz
 
-If you want to install the library from a local .gz file, make sure you have the library file in .gz format. Then, use the command:
+where after /download/ changed version to another!
+
+If you want to install the library from a local .tar.gz file, make sure you have the library file in .tar.gz format. Then, use the command:
 
 *bash
 
-pip install /path/to/swypiEmotionText.gz
-Where /path/to/swypiEmotionText.gz is the path to the file on your computer or device.
+pip install /path/to/swypiEmotionText.tar.gz
+Where /path/to/swypiEmotionText.tar.gz is the path to the file on your computer or device.
 
 Usage
 Importing the library
