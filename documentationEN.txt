@@ -3,10 +3,11 @@ Description
 The swypiEmotionText library is designed for text analysis and determining the emotions contained within it. It provides tools for evaluating moods and emotions in user-entered texts. The library can identify positive, negative, and neutral emotions.
 
 Installation
-To install the library from PyPI, use the following comma*nd:
+To install the library from Github: use the following command:
 
 *bash
-pip install swypiEmotionText
+pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/SwypiEmotiontext/swypiEmotionText.tar.gz
+
 If you want to install the library from a local .gz file, make sure you have the library file in .gz format. Then, use the command:
 
 *bash
