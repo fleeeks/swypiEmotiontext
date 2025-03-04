@@ -6,7 +6,7 @@ Installation
 
 To install swypiEmotionText, run the following command:
 
-pip install https://github.com/fleeeks/swypiEmotiontext/blob/main/swypiEmotionText.tar.gz
+pip install https://github.com/fleeeks/swypiEmotiontext/releases/download/SwypiEmotiontext/swypiEmotionText.tar.gz
 
 Alternatively, if you have the .tar.gz file downloaded locally, you can install it by specifying the file path:
 
